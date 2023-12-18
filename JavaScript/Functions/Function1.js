@@ -36,7 +36,7 @@ console.log(loginUser())// Undefined is logged in as user//
 
 /// If in fucntion//
 
-function signIn(username){
+function signIn(username=""){
     if(username===undefined){
         console.log("Please enter username ")
         return
@@ -45,4 +45,15 @@ function signIn(username){
     return `${username} is Signinned`
 }
 
-console.log(signIn())
+console.log(signIn("alok"))
+
+function register(email){
+ if(email === undefined){
+    console.log("Enter a valid Email Address");
+    return
+
+ }
+ return `${email} is used`
+
+}
+console.log(register("farzan@gmail.com"))
