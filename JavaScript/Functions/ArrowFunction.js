@@ -22,11 +22,12 @@ const ott={
 // /////////////////////Arrow Function in JavaScript///////////////////////////////////////////
 // function chai(){
 //     let uName="Sahil"
-//     console.log(this.uName)
+//     console.log(this.uName)  () => {}
+//()//
 // }
 // chai()
 
-const chai= ()=>{// Arrow Function 
+const chai = ()=>{// Arrow Function 
     let profile="Sahil"
     console.log(this.profile)
 
