@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom || Chai aur code </title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <ul class="Language">
+
+        <li> JavaScript </li>
+        
+    </ul>
+</body>
+<script>
+   function addlanguage(addlang){
+    const li= document.createElement('li');
+    li.innerHTML=`${addlang}`
+    document.querySelector('.Language').appendChild(li);
+
+   }
+
+   addlanguage("python")
+   addlanguage("TypeScript")
+   addlanguage("C#")
+
+
+  
+ function addOptimizelanguage(addlang) {
+  const li = document.createElement('li');
+  li.appendChild(document.createTextNode(addlang));
+  document.querySelector('.Language').appendChild(li);
+}
+
+addOptimizelanguage('HTML5');
+addOptimizelanguage("C++");
+addOptimizelanguage("CSS3")
+addOptimizelanguage('Docker')
+  
+/// Edit in JavaScript///
+const secondlang=document.querySelector('li:nth-child(3)')
+// secondlang.innerHTML="GOT"
+const newli=document.createElement('li');
+newli.textContent="RUBY"
+
+secondlang.replaceWith(newli)// Here it isa replacing with the recent assigned value //
+
+//Second Way to Edit//
+const FirstLang=document.querySelector("li:first-Child")
+FirstLang.outerHTML='<li>Microsoft</li>'
+
+//Remove//
+
+const lastLang=document.querySelector('li:nth-child(4)')
+lastLang.remove()
+   
+
+   
+</script>
+
+</html>
