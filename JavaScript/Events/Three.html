@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="text">Async with JavaScript</h4>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        const changeText = function() {
+            document.getElementById("text").innerHTML = "Farzan";
+        }
+
+        // Use setTimeout to delay the initial change
+        const initialChange = setTimeout(changeText, 3000);
+      
+
+        const start = function() {
+            document.querySelector('#start').addEventListener('click', function() {
+                // Use setInterval to repeat the change every 3000 milliseconds (3 seconds)
+                const intervalId = setInterval(changeText, 3000);
+                console.log("start");
+                
+                // Store the interval ID if you want to stop it later
+                // You can use clearInterval with this ID
+                localStorage.setItem('intervalId', intervalId);
+            });
+        }
+
+        const stop = function() {
+            document.querySelector('#stop').addEventListener('click', function() {
+                // Retrieve the stored interval ID
+                const intervalId = localStorage.getItem('intervalId');
+                
+                // Clear the interval using the stored ID
+                clearInterval(intervalId);
+                console.log("stop");
+            });
+        }
+
+        // Call the start and stop functions
+        start();
+        stop();
+    </script>
+</body>
+</html>

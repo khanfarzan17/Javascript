@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+ 
+</head>
+<body id="background">
+    <div class="Container">
+    
+    <h3 style="background-color: #212121;color: #fff;padding: 10px; border-radius: 10px;">The Background Color Change</h3>
+    <button style="background-color: #212121;color: #fff;;"  id="start">Start</button>
+    <button style="background-color: #212121;color: #fff;padding-left: 10px;" id="stop">Stop</button>
+  
+    </div>
+    <script>
+        // Function to change the background color randomly
+        const changeColor = function() {
+            // Generate random RGB values
+            const randomColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
+            
+            // Set the background color to the random color
+            document.getElementById("background").style.backgroundColor = randomColor;
+        };
+
+        // Variable to store the interval ID
+        let intervalId;
+
+        // Event listener to start changing the color
+        document.getElementById('start').addEventListener('click', function() {
+            // Set an interval to call changeColor every 2000 milliseconds (2 seconds)
+            intervalId = setInterval(changeColor, 2000);
+            console.log("Start");
+        });
+
+        // Event listener to stop changing the color
+        document.getElementById('stop').addEventListener('click', function() {
+            // Clear the interval using the stored ID
+            clearInterval(intervalId);
+            console.log("Stop");
+        });
+    </script>
+</body>
+</html>
