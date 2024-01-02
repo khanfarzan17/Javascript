@@ -110,5 +110,5 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response)=>{
 }).catch((error)=>{
     console.log('Error Something Went Wrong :' ,error)
 }).finally((result)=>{
-    console.log("Either the Response is being Success or Failed ")
+    console.log("Either the Response is being Success or Failed ",result)
 })
