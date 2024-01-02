@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REQUEST API By using XML  </title>
+</head>
+<body>
+ <!--
+    readyState Value    State               Description
+    0 (UNSENT)          The object is created    The XMLHttpRequest object has been created, but the open method has not been called yet.
+    1 (OPENED)          Configuration set        The open method has been called. The XMLHttpRequest is configured, but the send method has not been called yet.
+    2 (HEADERS_RECEIVED) Headers received       The send method has been called, and the request has been sent to the server. The headers of the response are available, but the body of the response is not yet received.
+    3 (LOADING)         Loading                 Some data has been received. The responseText property contains partial data, but the entire response is not yet available.
+    4 (DONE)            Request complete        The entire request is complete. The responseText property now contains the complete response data, and the request was successful if the status property is in the range of 200 to 299
+-->
+</body>
+
+<script>
+     const requestURL = 'https://randomuser.me/api/';
+    const xhr = new XMLHttpRequest();
+    
+    xhr.open('GET', requestURL);
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            
+            const data = JSON.parse(xhr.responseText);
+
+            
+            const latitude = data.results[0].location.country;
+
+            
+            console.log("Latitude:", latitude);
+        }
+    };
+    
+    xhr.send();
+</script>
+
+
+</html>
