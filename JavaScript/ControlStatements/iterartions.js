@@ -2,26 +2,26 @@
 
 
 
-// for(let i=0;i<=10;i++){
-//     const element=i
-//     if(element == 5|| element == 7){
-//         console.log("5 is best element")
-//         console.log("7 is best Number")
-//     }
-//     console.log(element)
-// }
+for(let i=0;i<=10;i++){
+    const element=i
+    if(element == 5|| element == 7){
+        console.log("5 is best element")
+        console.log("7 is best Number")
+    }
+    console.log(element)
+}
 
 // Nested For loop//
 
-// for (let i = 1; i <=10; i++) {
-//   console.log(`the table of ${i}`)
-//   for (let j = 1; j <=10; j++) {
+for (let i = 1; i <=10; i++) {
+  console.log(`the table of ${i}`)
+  for (let j = 1; j <=10; j++) {
     
-//     console.log(i + '*' + j +'=' + i*j )
+    console.log(i + '*' + j +'=' + i*j )
     
-//   }
+  }
     
-// }
+}
 
 // Accessing the Array in for loop//
 

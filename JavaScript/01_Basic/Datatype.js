@@ -1,10 +1,10 @@
 /* Datatypes in Javascript */
 
-// let name = "Farzan"
-// let age = 23
-// let isloggedIn = false
-// console.log(name)
-// console.table([age, isloggedIn])
+let name = "Farzan"
+let age = 23
+let isloggedIn = false
+console.log(name)
+console.table([age, isloggedIn])
 
 /* Null is a datatype also and a standalone value 
 //object//
@@ -29,11 +29,11 @@ symbol is also a datatype which is being used to assign unique componets  exampl
 ///JavaScript is a dynamically typed language. In a dynamically typed language, variable types are determined at runtime, and you can assign values of different types to the same variable. JavaScript allows you to change the type of a variable during the execution of your program.//
 
 
-// let f="Hello World ";// f is being assign as String//
-// console.log(f);
+let f="Hello World ";// f is being assign as String//
+console.log(f);
 
-// f=12;// f is being assign as number///
-// console.log(f);
+f=12;// f is being assign as number///
+console.log(f);
 
 
 // Using Symbols 

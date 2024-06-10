@@ -7,11 +7,11 @@ myArray.forEach(function(myArray){
 
 
 
-// let SuperHero=["flash","Batman","Superman","Hulk"]
+let SuperHero=["flash","Batman","Superman","Hulk"]
 
-// SuperHero.forEach(function(rou){
-// console.log(rou)
-// })
+SuperHero.forEach(function(rou){
+console.log(rou)
+})
 
 let anuj=["34","Hello ","How are you"]
 

@@ -2,8 +2,8 @@
 
 function calculatecartPrice(val1,val2,...num1){// Rest Method//
 
-    // console.log(val1);
-    // console.log(val2);
+    console.log(val1);
+    console.log(val2);
     return num1
 }
 console.log(calculatecartPrice(230,400,500,700));// Gives in array Format//

@@ -1,13 +1,13 @@
-//let score="22abc"//
-//let score="33"//
-// let score=null
-// console.log(typeof(score))
-// console.log(typeof score)
+let score="22abc"
+let score="33"
+let score=null
+console.log(typeof(score))
+console.log(typeof score)
 
 // we make sure the Datatype of the score should be Number not a string///
-// let value=Number(score)
-// console.log(typeof value)
-// console.log(value)
+let value=Number(score)
+console.log(typeof value)
+console.log(value)
 
 
 /* If we give the score value undefined then the output will be NaN 

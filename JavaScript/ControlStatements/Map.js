@@ -1,18 +1,18 @@
 ///// High order Array Loop //
  // for of loop in JavaScript//
 
-//  let newArray=[1,2,3,4,5,6,]
+ let newArray=[1,2,3,4,5,6,]
 
-// for (const elements of newArray) {
-//     console.log(elements);
+for (const elements of newArray) {
+    console.log(elements);
     
-// }
+}
 
 // let greeting="hello world"
 
-// for (const greets of greeting) {
-//     console.log(greets);
-// }
+for (const greets of greeting) {
+    console.log(greets);
+}
 
 ///// Maps in JavaScript//
 

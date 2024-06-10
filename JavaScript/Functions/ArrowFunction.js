@@ -8,22 +8,22 @@ const ott={
     }
 }
 
-//  console.log(ott);// context is not Being Changed//
-//  ott.WelcomeMeassage();
-// /////////////////////////////////////////////////////////////////////////////////
-// ott.userName="Alok Singh"
-// ott.Age=45
-// ott.price=450
-// console.log(ott)// Contex is Being Changed//
-// ott.WelcomeMeassage();
-// console.log(this)// current context is Empty//
+ console.log(ott);// context is not Being Changed//
+ ott.WelcomeMeassage();
+/////////////////////////////////////////////////////////////////////////////////
+ott.userName="Alok Singh"
+ott.Age=45
+ott.price=450
+console.log(ott)// Contex is Being Changed//
+ott.WelcomeMeassage();
+console.log(this)// current context is Empty//
 
 
 // /////////////////////Arrow Function in JavaScript///////////////////////////////////////////
 // function chai(){
 //     let uName="Sahil"
 //     console.log(this.uName)  () => {}
-//()//
+// ()//
 // }
 // chai()
 

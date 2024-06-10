@@ -1,12 +1,12 @@
 /* In Javascript Array is being Defined as the Storing of Differnt Element in same Variable
 In JS array are resizeable 
 */
-// const myArray=[0,1,2,3,4,"Farzan",true];
-// console.log(myArray);
-// console.log(myArray[2]);//Array indexing//
+const myArray=[0,1,2,3,4,"Farzan",true];
+console.log(myArray);
+console.log(myArray[2]);//Array indexing//
 
- //const arr2=new Array(1,2,3,4);// other way to Declare a Array//
-// console.log(arr2);
+ const arr2=new Array(1,2,3,4);// other way to Declare a Array//
+console.log(arr2);
 
 /* Methods of Array in JavaScript */
 
@@ -20,11 +20,11 @@ console.log(newArr);// 90 is being Removed from the Array//
 
 //Unshift and Shift Methos in Array//
 
-// newArr.unshift(12);
-// console.log(newArr)
+newArr.unshift(12);
+console.log(newArr)
 
-// newArr.shift();
-// console.log(newArr);
+newArr.shift();
+console.log(newArr);
 
 //includes is to cheack whether a Particular Element is being Present or Not//
 
@@ -61,11 +61,11 @@ console.log(meta.length);
 const marvelHeros=["Ironman", "SpiderMan ","thor"]
 const dcHeros=["batman","flash","wonderwoman"]
 
-// marvelHeros.push(dcHeros);
-// console.log(marvelHeros);// By using Push between we will create a array in side Array//
+marvelHeros.push(dcHeros);
+console.log(marvelHeros);// By using Push between we will create a array in side Array//
 
-// const allHeros=marvelHeros.concat(dcHeros);
-// console.log(allHeros);// It good but what if we have more arrays//
+const allHeros=marvelHeros.concat(dcHeros);
+console.log(allHeros);// It good but what if we have more arrays//
 // Spread Method in Array //
 
 const universalHeros=[...dcHeros,...marvelHeros];
@@ -75,11 +75,11 @@ console.log(universalHeros);
 
 //// FLat method in Array JavScript//
  const anotherArray=[1,2,3,4,[12,3,4],[2,5,6,78,90,[23,4,5,6,1],34,5,6]];
- /*output [
+ output [
   1, 2, 3,  4, 12,  3, 4,
   2, 5, 6, 78, 90, 23, 4,
   5, 6, 1, 34,  5,  6
-]*/
+]
 
  const flatedArray= anotherArray.flat(Infinity);
  console.log(flatedArray);

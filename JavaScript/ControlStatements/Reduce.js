@@ -2,23 +2,23 @@
 
 let number=[12,34,56,100]
 
-// let savenumber= number.reduce(function(acc,currval){
+let savenumber= number.reduce(function(acc,currval){
 
-//     console.log(`acc is ${acc} and currval is ${currval}`)
-//     return acc+currval;
-// },0)
+    console.log(`acc is ${acc} and currval is ${currval}`)
+    return acc+currval;
+},0)
 
-// console.log(savenumber)
+console.log(savenumber)
 
 
 
-// let numbers=[12,34,56,101]
-// let reducenumber=numbers.reduce((ac,cuva)=>{
+let numbers=[12,34,56,101]
+let reducenumber=numbers.reduce((ac,cuva)=>{
 
-//     console.log(`Accumulator value is ${ac} and  cuurent value is ${cuva}`)
-//     return ac+cuva
-// },0 )
-// console.log(reducenumber)
+    console.log(`Accumulator value is ${ac} and  cuurent value is ${cuva}`)
+    return ac+cuva
+},0 )
+console.log(reducenumber)
 
 /// Applying Reduce function to the cart to calculate totoal price//
 

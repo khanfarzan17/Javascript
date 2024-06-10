@@ -5,8 +5,8 @@ if(true){
     var c=34
     
 }
-// console.log(a);
-// console.log(b);
+console.log(a);
+console.log(b);
 console.log(c);
 
 /// The code which is being under {} is called as Local Scope//

@@ -1,25 +1,25 @@
 // Foreach does not have any Return type so for replace we use filter in javaScript  to get a return a value//
 
-// let Nums=[1,2,3,4,5,6,7,8,9]
+let Nums=[1,2,3,4,5,6,7,8,9]
 
-// let newMy=Nums.filter(num => num>5) 
-// console.log(newMy)// output will be [6,7,8,9]
+let newMy=Nums.filter(num => num>5) 
+console.log(newMy)// output will be [6,7,8,9]
 
-// let numbers=[1,2,3,4,6,7,8,9,10]
+let numbers=[1,2,3,4,6,7,8,9,10]
 
-// let evennumber= numbers.filter(numbers=>numbers%2==0)
-// console.log(evennumber)
+let evennumber= numbers.filter(numbers=>numbers%2==0)
+console.log(evennumber)
 
 
 /// Filter with scope //
-//  let number=[12,34,56,77,99]
+ let number=[12,34,56,77,99]
 
-//  let divi=number.filter((number) =>{
-//      return number%2==0 // with scope we need to return // when you start a scope//
+ let divi=number.filter((number) =>{
+     return number%2==0 // with scope we need to return // when you start a scope//
 
-//  })
+ })
 
-//  console.log(divi)//[12,34,56]
+ console.log(divi)//[12,34,56]
 
 
  ///// now applying filter for JSON Data in Array///
@@ -182,7 +182,7 @@
     }
 ]
 const BookUser=books.filter((item) => item.title==='The Count of Monte Cristo')
-// console.log(BookUser)
+console.log(BookUser)
 // item.publishedYear >= 1950 && item.publishedYear <= 2010//
 books.forEach((bk)=>{// for each //
     console.log(bk);
